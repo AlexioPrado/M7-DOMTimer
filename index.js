@@ -11,13 +11,12 @@ start.onclick = function(){
             timer = setInterval(clock, 1000);
             pause = false;
         }else{
-            exit
+            return
         }
     } else {
         clock()
         timer = setInterval(clock, 1000);
     }
-    
 }
 stop.onclick = function(){
     clearInterval(timer)
@@ -28,6 +27,8 @@ reset.onclick = function(){
     hour.innerHTML = '00';
     second.innerHTML = '00';
     clearInterval(timer)
+    timer = undefined;
+    pause = false;
 }
 
 let day = document.getElementById('day');
