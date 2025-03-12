@@ -1,0 +1,28 @@
+body{
+    background-color: lightpink;
+}
+
+td {
+    font-size: 100px;
+}
+
+table {
+    margin: 15px;
+    background-color: lightskyblue;
+    border: 7px solid lightcyan;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    margin: 0px 5px 0px 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
